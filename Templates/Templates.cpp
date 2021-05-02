@@ -11,9 +11,22 @@
 //Program Structure
 using namespace std;
 
-void half(int);
-void half(float); //has 7 digits
-void half(double); //has 15
+template <class R>
+R half(R value)
+{
+	float mine2 = static_cast<float>(mine);
+	cout << "\n\nHere is half the value of the int: " << (round((mine2 / 2))) << endl;
+}
+
+template <class R>
+R half(R value1, R value2)
+{
+
+}
+
+//void half(int);
+//void half(float); //has 7 digits
+//void half(double); //has 15
 
 
 int main() 
@@ -23,7 +36,9 @@ int main()
 	float myChoiceFLT = 3.14159;
 	double myChoiceDBL = 3.14159265358979323846;
 
-	/*half(myChoiceINT);*/
+	half(myChoiceINT);
+
+	
 
 	cout << endl << endl;
 	system("pause");
@@ -32,5 +47,7 @@ int main()
 
 //void half(int mine)
 //{
-//
+//	if ()
+//	float mine2 = static_cast<float>(mine);
+//	cout << "\n\nHere is half the value of the int: " << (round((mine2 / 2))) << endl;
 //}
