@@ -6,7 +6,6 @@
 //Libraries
 #include<iostream>
 #include<iomanip>
-#include<string>
 
 //Program Structure
 using namespace std;
@@ -26,18 +25,17 @@ double half(R1 value1, R2 value2)
 
 int main() 
 {
-	
 	int myChoiceINT = 9;
-	float myChoiceFLT = 3.14159;
-	double myChoiceDBL = 3.14159265358979323846;
+	float myChoiceFLT = 3.14159; //PI
+	double myChoiceDBL = 3.14159265358979323846; //PI
 
 	cout << "The result of halving (and rounding of course) my integer is: " << half(myChoiceINT);
 
 	cout << fixed << showpoint << setprecision(5);
-	cout << "\n\nThe result of halving my float to 5 decimal places is: " << half(myChoiceFLT, myChoiceDBL);
+	cout << "\n\nThe result of halving my float, PI, to 5 decimal places is: " << half(myChoiceFLT, myChoiceDBL);
 
 	cout << fixed << showpoint << setprecision(10);
-	cout << "\n\nThe result of halving my double to 10 decimal places is: " << half(myChoiceDBL, myChoiceFLT);
+	cout << "\n\nThe result of halving my double, PI, to 10 decimal places is: " << half(myChoiceDBL, myChoiceFLT);
 
 	cout << endl << endl;
 	system("pause");
